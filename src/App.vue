@@ -4,6 +4,7 @@
       <h1>用户数据管理中心</h1>
     </el-header>
     <el-main>
+      <ProtoUserViewer />
       <UserManager />
       <UserStatsChart />
     </el-main>
@@ -13,6 +14,7 @@
 <script setup lang="ts">
 import UserManager from "./components/UserManager.vue";
 import UserStatsChart from "./components/UserStatsChart.vue";
+import ProtoUserViewer from "./components/ProtoUserViewer.vue";
 import { userService } from "./utils/userCacheUtil";
 
 const users = userService.getUsers();
