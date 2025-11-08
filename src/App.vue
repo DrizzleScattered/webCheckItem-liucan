@@ -3,7 +3,7 @@
     <el-header>
       <h1>用户数据管理中心</h1>
     </el-header>
-    <el-main class="half-width">
+    <el-main>
       <UserManager />
       <UserStatsChart />
     </el-main>
@@ -28,8 +28,6 @@ if (users.length === 0) {
 </script>
 
 <style scoped>
-/* 引入Element Plus样式 */
-@import "element-plus/dist/index.css";
 body {
   margin: 0;
   padding: 0;

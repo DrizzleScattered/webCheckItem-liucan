@@ -3,5 +3,5 @@ interface User {
   name: string;
   age: number;
   email: string;
-  role: string; // 角色只能是这两个值
+  role: string;
 }
