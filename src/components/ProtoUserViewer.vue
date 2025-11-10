@@ -24,7 +24,7 @@ const users = ref<User[]>([]);
 
 const loadData = async () => {
   try {
-    // 模拟接口调用，假设 JSON 文件放在 public/data/users.json
+    // 模拟接口调用
     const data = await loadUsersAsProto("/data/users.json");
     users.value = data;
     ElMessage.success(`成功加载 ${data.length} 个用户`);
